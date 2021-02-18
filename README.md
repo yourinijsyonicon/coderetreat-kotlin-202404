@@ -1,6 +1,6 @@
 # Code Retreat - Kotlin
 
-Kickstart Kotlin 1.3.61 with Assert and MockK.
+Kickstart Kotlin 1.4.x with AssertJ and MockK.
 
 Take care to update IntelliJ's Kotlin version when prompted!
 
