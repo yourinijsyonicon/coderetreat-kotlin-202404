@@ -3,7 +3,10 @@ plugins {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.6.2")
-    testImplementation("org.assertj:assertj-core:3.14.0")
-    testImplementation("io.mockk:mockk:1.9.3")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.0")
+    testImplementation("org.assertj:assertj-core:3.20.2")
+    testImplementation("io.mockk:mockk:1.12.0")
+}
+repositories {
+    mavenCentral()
 }
