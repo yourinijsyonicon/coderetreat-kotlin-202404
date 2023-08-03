@@ -21,7 +21,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 
-    testImplementation("org.junit.jupiter:junit-jupiter:5.9.3")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
     testImplementation("org.assertj:assertj-core:3.24.2")
 }
 
@@ -31,7 +31,7 @@ tasks.test {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
-        languageVersion = "1.8"
+        languageVersion = "1.9"
         freeCompilerArgs = listOf("-Xjsr305=strict")
         jvmTarget = "11"
     }
