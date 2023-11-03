@@ -5,18 +5,15 @@ plugins {
     `java-library`
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_11
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
-    implementation(platform("org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.4.2"))
+    implementation(platform("org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.7.3"))
 
-
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
@@ -33,6 +30,5 @@ tasks.withType<KotlinCompile> {
     kotlinOptions {
         languageVersion = "1.9"
         freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "11"
     }
 }

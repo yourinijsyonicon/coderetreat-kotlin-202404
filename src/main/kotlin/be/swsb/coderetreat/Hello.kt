@@ -1,14 +1,8 @@
 package be.swsb.coderetreat
 
-class Hello {
-
+class Hello(private val name: String? = null) {
     fun greet(): String {
-        return "World!"
-    }
-}
-
-open class HelloService {
-    open fun sayGreeting(): String {
-        return Hello().greet()
+        val subject = name ?: "World"
+        return "Hello, $subject!"
     }
 }
