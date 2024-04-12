@@ -6,3 +6,7 @@ class Hello(private val name: String? = null) {
         return "Hello, $subject!"
     }
 }
+
+fun main() {
+    println(Hello("banaan"))
+}
